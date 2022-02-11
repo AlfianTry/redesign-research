@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "majoo-cms": "apps/majoo-cms",
+    "majoo-cms-e2e": "apps/majoo-cms-e2e"
+  }
+}

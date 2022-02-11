@@ -1,0 +1,28 @@
+{
+  "root": "apps/majoo-cms-e2e",
+  "sourceRoot": "apps/majoo-cms-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/majoo-cms-e2e/cypress.json",
+        "devServerTarget": "majoo-cms:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "majoo-cms:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/majoo-cms-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["majoo-cms"]
+}
