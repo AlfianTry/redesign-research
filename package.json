@@ -1,0 +1,19 @@
+{
+  "name": "redesign-research",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "story": "lerna run storybook --stream",
+    "libbuild": "lerna run libbuild --stream",
+    "prestart": "yarn libbuild",
+    "start": "lerna run start --stream"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
