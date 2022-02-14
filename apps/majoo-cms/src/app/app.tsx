@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { SharedButton } from '@redesign-research/shared/button';
 
 const StyledApp = styled.div`
   // Your style here
@@ -9,6 +10,7 @@ export function App() {
     <StyledApp>
       <header>
         <h1>Majoo CMS</h1>
+        <SharedButton>Penjualan</SharedButton>
       </header>
     </StyledApp>
   );
